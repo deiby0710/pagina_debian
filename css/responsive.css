@@ -22,11 +22,30 @@
     .service_section .box.b-3 .detail-box {
         width: auto;
     }
+    .creado_por_rp {
+        display: block;
+        min-width: 300px;
+        margin-left: 100px;
+    }
 
 
 }
 
 @media (max-width: 768px) {
+    .trajet_created_by{
+        display: flex;
+        flex-direction: column;
+        right: 30px;
+    }
+    .client_section .client_container {
+        min-width: 300px;
+    }
+    .layout_debian_que_es {
+        display: block;
+    }
+    .layout_debian_que_es .img-box{
+        padding: 0;
+    }
     .slider_section .detail-box {
         text-align: center;
         margin-top: 25px;
