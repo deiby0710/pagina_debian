@@ -11,9 +11,13 @@ body {
 .layout_padding2 {
   padding: 45px 0;
 }
+.layout_debian_que_es{
+  display: flex;
+}
 
 .layout_padding2-top {
   padding-top: 45px;
+  padding-right: 30px;
   text-align: justify;
 }
 
