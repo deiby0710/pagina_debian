@@ -14,6 +14,7 @@ body {
 
 .layout_padding2-top {
   padding-top: 45px;
+  text-align: justify;
 }
 
 .layout_padding2-bottom {
@@ -27,6 +28,8 @@ body {
 .layout_padding-bottom {
   padding-bottom: 75px;
 }
+
+
 
 .custom_heading-container {
   display: -webkit-box;
