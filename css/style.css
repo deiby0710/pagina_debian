@@ -21,6 +21,24 @@ body {
   text-align: justify;
 }
 
+.layout_padding2-top2 {
+  padding-top: 45px;
+  padding-right: 30px;
+  text-align: justify;
+  font-weight: bold;
+}
+
+.link{
+  float: left;
+}
+
+
+.img-inst{
+  height: auto;
+  max-width: 400px;
+  max-height: 400px;
+}
+
 .layout_padding2-bottom {
   padding-bottom: 45px;
 }
@@ -32,8 +50,43 @@ body {
 .layout_padding-bottom {
   padding-bottom: 75px;
 }
+.container-instalar{
+  display: flex;
+  }
 
+ .container-internos{
+  border: 4px solid #603543;
+  text-align: justify;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 20px;
+ } 
 
+.container-entities{
+  display: flex;
+}
+
+.div-versions{
+  width: 80%;
+  height: 50%;
+}
+
+.container-enti{
+  margin: 20px;
+  width: 400px;
+  height: 300px;
+}
+
+.clickable-image {
+  border: 2px solid transparent; /* Borde inicial transparente */
+  transition: border 0.3s, box-shadow 0.3s; /* Suaviza las transiciones */
+}
+
+a:hover .clickable-image {
+  border: 2px solid #007BFF; /* Borde azul al pasar el mouse */
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.5); /* Sombra al pasar el mouse */
+  cursor: pointer; /* Cambia el cursor a una mano */
+}
 
 .custom_heading-container {
   display: -webkit-box;
@@ -42,6 +95,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 50px;
 }
 
 .custom_heading-container h3 {
@@ -218,6 +272,7 @@ a:focus {
   width: 100%;
 }
 
+
 .slider_section .detail-box h1 {
   font-weight: bold;
   font-size: 4rem;
@@ -287,6 +342,7 @@ a:focus {
 
 .about_section .img-box img {
   width: 350px;
+  border-radius: 15px;
 }
 
 /* Contenedor que mantiene la relación de aspecto */
@@ -316,6 +372,8 @@ a:focus {
 
 .service_section .service_container {
   padding: 45px 0 75px 0;
+  display: flex;
+  
 }
 
 .service_section .box.b-2 .detail-box {
@@ -351,6 +409,7 @@ a:focus {
 
 .service_section .img-box img {
   height: 200px;
+  border-radius: 15px;
 }
 
 .service_section .detail-box {
