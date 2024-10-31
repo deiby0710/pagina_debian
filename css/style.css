@@ -117,6 +117,10 @@ body {
   height: auto; 
   border-radius: 10px; 
 }
+.img-box-2 img {
+  width: 250px;
+  padding-right: 20px;
+}
 
 .detail-box {
   text-align: center;
@@ -321,9 +325,12 @@ a:focus {
           align-items: center;
 }
 
+
 .slider_section .img-box img {
   width: 100%;
 }
+
+
 
 
 .slider_section .detail-box h1 {
