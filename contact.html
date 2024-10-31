@@ -215,6 +215,91 @@
   </section>
   <!-- end contact section -->
 
+
+
+
+
+
+
+  <!-------------------------------------------------Enviar emails----------------------------------------------------------------------->
+  <section class="contact_email">
+    <div class="container">
+      <!--
+              
+      <div class="contenedor">
+         Sección de correos 
+        <div class="emails">
+          <button id="emailButton">Seleccionar correo</button>
+          <div id="emailDropdown" class="dropdown-content">
+            <div class="email-item" onclick="selectEmail('alejandro.burgos@gmail.com')">
+                <img src="images/burgos.jpg" alt="Foto de Alejandro" class="profile-pic">
+                <p>alejandro.burgos@gmail.com</p>
+            </div>
+            <div class="email-item" onclick="selectEmail('fernandoguevara@udenar.edu.co')">
+                <img src="images/fernando.jpg" alt="Foto de Fernando" class="profile-pic">
+                <p>fernandoguevara@udenar.edu.co</p>
+            </div>
+            <div class="email-item" onclick="selectEmail('Denriqueznoguera@gmail.com')">
+                <img src="images/santiago.jpg" alt="Foto de Denriquez" class="profile-pic">
+                <p>Denriqueznoguera@gmail.com</p>
+            </div>
+            <div class="email-item" onclick="selectEmail('deibyalejandro@udenar.edu.co')">
+                <img src="images/deiby.jpg" alt="Foto de Deiby" class="profile-pic">
+                <p>deibyalejandro@udenar.edu.co</p>
+            </div>
+        </div>
+        
+        </div>
+        <div class="select_emails">
+          <h2 id="selectedEmail">Seleccione un correo de los Autores</h2>
+        </div>
+      </div>
+       Caja de texto para el comentario 
+      <div class="texto_emails">
+        <textarea id="commentBox" placeholder="Escribe tu comentario aquí..."></textarea>
+        <button id="sendButton" onclick="sendComment()">Enviar</button>
+      </div>
+      <script>
+        // Mostrar u ocultar el menú desplegable
+        document.getElementById("emailButton").onclick = function() {
+            const dropdown = document.getElementById("emailDropdown");
+            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+        };
+
+        // Función para seleccionar el correo y mostrarlo
+        function selectEmail(email) {
+            document.getElementById("selectedEmail").innerText = `Correo seleccionado: ${email}`;
+            document.getElementById("emailDropdown").style.display = "none"; 
+        }
+      </script>
+      -->
+      <div class="header">
+        <h3>CONTACTANOS</h3>
+      </div>
+      <form id="contactForm" action="https://formspree.io/f/xbljgoyd" method="POST">
+        <label for="email">Tu email:</label>
+        <input type="email" name="email" id="email" placeholder="Ingresa tu correo" required>
+    
+        <label for="message">Tu mensaje:</label>
+        <textarea name="message" id="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+    
+        <button type="submit">Enviar</button>
+      </form>
+      <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            // Deja que el formulario se envíe normalmente
+            setTimeout(function() {
+                // Vaciar los campos después de enviar el formulario
+                document.getElementById('email').value = '';
+                document.getElementById('message').value = '';
+            }, 1000); // Da tiempo para que el formulario se procese antes de limpiar
+        });
+      </script>
+    
+    </div>
+  </section>
+  <!------------------------------------------------------------------------------------------------------------------------>
+  
   <!-- info section -->
   <section class="info_section layout_padding">
     <div class="container">
@@ -294,6 +379,7 @@
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
