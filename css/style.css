@@ -82,6 +82,29 @@ body {
 }
 
 
+.references {
+  padding: 10px;
+  text-align: left; /* Alineación a la izquierda */
+}
+.references p {
+  font-weight: bold;
+}
+.references ul {
+  list-style-type: none;
+  padding: 0;
+}
+.references li {
+  margin: 5px 0;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 600px) {
+  .references ul,
+  .references li {
+      font-size: 0.9em;
+  }
+}
+
 
 .container-entities {
   display: flex;
